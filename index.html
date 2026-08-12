@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sumit Sharma | Developer Portfolio</title>
-    <!-- FontAwesome Icons for Social Media -->
+    <title>Sumit Shop - Best Online Deals</title>
+    <!-- FontAwesome for Icons (Cart icon ke liye) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <div class="profile-container">
-            <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-img">
-            <span class="badge">Online</span>
-        </div>
-        
-        <h1>Sumit Sharma 👋</h1>
-        <p class="title">Frontend Web Developer</p>
-        <p class="subtitle">Main modern aur responsive websites banata hoon.</p>
-        
-        <div class="skills">
-            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span class="tag"><i class="fa-brands fa-square-js"></i> JavaScript</span>
-            <span class="tag"><i class="fa-brands fa-github"></i> GitHub</span>
-        </div>
+    <!-- 1. HEADER SECTION (Logo and Nav) -->
+    <header>
+        <div class="logo">SUMIT <span>SHOP</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <a href="#" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">3</span> <!-- Sample Cart Count -->
+        </a>
+    </header>
 
-        <div class="social-links">
-            <a href="https://github.com/sumittsharma123-maker" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+    <!-- 2. HERO SECTION (Shopping Background) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Sumit Shop</h2>
+            <p>Sabse sasti aur achi shopping ka naya thikana.</p>
+            <a href="#products" class="shop-now-btn">Shop Now</a>
         </div>
+    </section>
 
-        <div class="btn-group">
-            <a href="mailto:example@gmail.com" class="btn primary-btn"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+    <!-- 3. PRODUCTS SECTION (Items to Sell) -->
+    <section class="products" id="products">
+        <h3>Humaare Products</h3>
+        
+        <div class="product-grid">
+            
+            <!-- Product 1 (Shoes) -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=400" alt="Sport Shoes">
+                <h4>Nike Red Sport Shoes</h4>
+                <p class="price">₹4,999</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 (Watch) -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400" alt="Watch">
+                <h4>Black Smart Watch</h4>
+                <p class="price">₹9,999</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <!-- Product 3 (Headphone) -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=400" alt="Headphone">
+                <h4>Bluetooth Headphone</h4>
+                <p class="price">₹2,499</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
